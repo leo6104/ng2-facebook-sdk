@@ -90,7 +90,7 @@ export class FacebookService {
                     if(response.authResponse) {
                         resolve(response);
                     }else{
-                        reject();
+                        reject(response);
                     }
                 }, options);
             }
